@@ -6,4 +6,4 @@ function saluerClient(nom , titre = "Client ") {
 
 let nom = prompt("Entrez votre nom : ");
 let titre = prompt("Entrez votre titre (facultatif) : ");
-saluerClient(nom, titre || undefined);
+saluerClient(nom, titre + " " || undefined);
