@@ -5,7 +5,7 @@ function creerCompteur(valeurInitiale = 0) {
     };
 }
 
-const MonCompteur = creerCompteur(2);
+let MonCompteur = creerCompteur(2);
 
 console.log(MonCompteur());
 console.log(MonCompteur());
