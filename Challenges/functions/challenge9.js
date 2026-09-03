@@ -7,15 +7,6 @@ function creerCompteur(valeurInitiale = 0) {
 
 let MonCompteur = creerCompteur(2);
 
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
-console.log(MonCompteur());
+for (let i = 0; i < 10; i++) {
+    console.log(MonCompteur());
+}
