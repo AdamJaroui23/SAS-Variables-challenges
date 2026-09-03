@@ -1,5 +1,5 @@
 function genererEmail(prenom , nom) {
-    let Email = prenom + nom + "@entreprise.com"
-    return (Email)
+    let email = prenom.toLowerCase() + "." + nom.toLowerCase() + "@entreprise.com"
+    return email
 }
 console.log(genererEmail("Adam", "Jaroui"));
