@@ -1,4 +1,8 @@
+let prompt = require("prompt-sync")();
+
 function verifierMotDePasse(motDePasse) {
   return motDePasse.length >= 8 && motDePasse.includes('@');
 }
-console.log(verifierMotDePasse("code@1234"));
+
+let motDePasse = prompt("Entrez votre mot de passe : ");
+console.log(verifierMotDePasse(motDePasse));
