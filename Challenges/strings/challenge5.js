@@ -1,3 +1,6 @@
+let prompt = require("prompt-sync")();
+let chaine = prompt("Donner une chaine de caracteres : ");
+
 function estPalindrome(chaine) {
     let debut = 0;
     let fin = chaine.length - 1;
@@ -11,6 +14,4 @@ function estPalindrome(chaine) {
         fin--;
     }
 }
-console.log(estPalindrome("kayak"));
-console.log(estPalindrome("radar"));
-console.log(estPalindrome("among"));
+console.log(estPalindrome(chaine));
