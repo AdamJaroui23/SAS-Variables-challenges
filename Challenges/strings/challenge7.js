@@ -8,10 +8,10 @@ function remplacerCaractere(chaine, ancien, nouveau) {
     let fin = chaine.length;
     let resultat = "";
     while (i < fin) {
-        if (chaine[i] === ancien) {
-            resultat = resultat + nouveau;
-        } else {
+        if (chaine[i] !== ancien) {
             resultat = resultat + chaine[i];
+        } else {
+            resultat = resultat + nouveau;
         }
         i++;
     }
