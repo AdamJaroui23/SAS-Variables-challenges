@@ -5,7 +5,7 @@ let account = {
     balance: 5000,
     type: "saving"
 };
-function affSolde(balance) {
+function affSolde() {
     return account.balance;
 }
 function deposer(argent) {
@@ -20,15 +20,19 @@ function retirer(argent) {
     argent = +prompt("Donner l'argent à retirer : ")
     if (argent > account.balance) {
         return "Le solde est insuffisant";
+    } else if (argent <= 0) {
+        return "Interdit de utiliser un montant négatife";
     } else {
         return account.balance -= argent
     }
 }
 function siSuffisant(prix) {
     prix = +prompt("Donner le prix du produit à acheter : ")
-    if (prix < account.balance) {
-        return "Le solde est suffisant"
-    } else {
+    if (prix <= 0) {
+        return "Interdit de utiliser un montant négatife"
+    } else if (account.balance > prix) {
+        return "Le solde est suffisant";
+    } else {   
         return "Le solde n'est pas suffisant";
     }
 }
